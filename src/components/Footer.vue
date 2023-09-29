@@ -8,7 +8,7 @@ import "@fontsource/hind-siliguri/400.css";
       <nav>
         <ul class="flex justify-between">
           <li>
-            <a href="#" class="flex">
+            <router-link to="/" class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -24,10 +24,10 @@ import "@fontsource/hind-siliguri/400.css";
                 />
               </svg>
               <span class="hidden dark:text-white">হোম</span>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="#" class="flex">
+            <router-link to="/tips/" class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,10 +43,10 @@ import "@fontsource/hind-siliguri/400.css";
                 />
               </svg>
               <span class="hidden dark:text-white">টিপস</span>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="#" class="flex">
+            <router-link to="/favorite/" class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -62,10 +62,10 @@ import "@fontsource/hind-siliguri/400.css";
                 />
               </svg>
               <span class="hidden dark:text-white">ফেভারিট</span>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="#" class="flex">
+            <router-link to="/settings/" class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -86,7 +86,7 @@ import "@fontsource/hind-siliguri/400.css";
                 />
               </svg>
               <span class="hidden dark:text-white">সেটিংস</span>
-            </a>
+            </router-link>
           </li>
         </ul>
       </nav>
