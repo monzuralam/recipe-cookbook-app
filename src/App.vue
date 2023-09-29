@@ -1,10 +1,10 @@
 <script setup>
-import "@fontsource/hind-siliguri/700.css";
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold">রেসিপি কুকবুক অ্যাপ</h1>
+  <div class="max-w-sm mx-auto relative">
+    <Header />
   </div>
 </template>
 
