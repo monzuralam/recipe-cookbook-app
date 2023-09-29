@@ -4,6 +4,12 @@
 
 body{
   font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.container{
+  @apply px-4;
+  @apply mx-auto;
 }
