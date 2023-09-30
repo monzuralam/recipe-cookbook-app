@@ -3,7 +3,7 @@ import "@fontsource/hind-siliguri/400.css";
 </script>
 
 <template>
-  <footer class="bg-white dark:bg-black sticky bottom-0 py-2">
+  <footer class="bg-white dark:bg-black fixed bottom-0 max-w-sm w-full py-2">
     <div class="container">
       <nav>
         <ul class="flex justify-between">
@@ -15,7 +15,7 @@ import "@fontsource/hind-siliguri/400.css";
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="w-6 h-6 dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
@@ -34,7 +34,7 @@ import "@fontsource/hind-siliguri/400.css";
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="w-6 h-6 dark:stroke-white dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
@@ -53,7 +53,7 @@ import "@fontsource/hind-siliguri/400.css";
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="w-6 h-6 dark:stroke-white dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
@@ -72,7 +72,7 @@ import "@fontsource/hind-siliguri/400.css";
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                class="w-6 h-6 dark:stroke-white dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
