@@ -8,7 +8,7 @@ import "@fontsource/hind-siliguri/400.css";
       <nav>
         <ul class="flex justify-between">
           <li>
-            <router-link to="/" class="flex">
+            <router-link to="/" class="flex px-2.5 py-1.5 rounded-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -27,14 +27,14 @@ import "@fontsource/hind-siliguri/400.css";
             </router-link>
           </li>
           <li>
-            <router-link to="/tips/" class="flex">
+            <router-link to="/tips/" class="flex px-2.5 py-1.5 rounded-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 dark:stroke-white dark:stroke-white"
+                class="w-6 h-6 dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
@@ -46,14 +46,14 @@ import "@fontsource/hind-siliguri/400.css";
             </router-link>
           </li>
           <li>
-            <router-link to="/favorite/" class="flex">
+            <router-link to="/favorite/" class="flex px-2.5 py-1.5 rounded-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 dark:stroke-white dark:stroke-white"
+                class="w-6 h-6 dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
@@ -65,14 +65,14 @@ import "@fontsource/hind-siliguri/400.css";
             </router-link>
           </li>
           <li>
-            <router-link to="/settings/" class="flex">
+            <router-link to="/settings/" class="flex px-2.5 py-1.5 rounded-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 dark:stroke-white dark:stroke-white"
+                class="w-6 h-6 dark:stroke-white"
               >
                 <path
                   stroke-linecap="round"
@@ -93,3 +93,11 @@ import "@fontsource/hind-siliguri/400.css";
     </div>
   </footer>
 </template>
+<style scoped>
+footer nav ul li a.router-link-exact-active {
+  background-color: rgb(209 213 219);
+}
+footer nav ul li a.router-link-exact-active span {
+  display: block;
+}
+</style>
