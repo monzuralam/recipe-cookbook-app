@@ -4,6 +4,7 @@ import { createPinia } from "pinia";
 
 import Home from "./routes/Home.vue";
 import Tips from "./routes/Tips.vue";
+import Favorite from "./routes/Favorite.vue";
 import Settings from "./routes/Settings.vue";
 import Errors from "./routes/Errors.vue";
 
@@ -18,6 +19,10 @@ const routes = [
   {
     path: "/tips/",
     component: Tips,
+  },
+  {
+    path: "/favorite/",
+    component: Favorite,
   },
   {
     path: "/settings",
