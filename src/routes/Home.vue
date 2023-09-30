@@ -3,7 +3,7 @@ import "@fontsource/hind-siliguri/500.css";
 </script>
 
 <template>
-  <div class="container">
+  <div class="container py-16">
     <div class="grid grid-cols-2 gap-2">
       <!-- category item start here -->
       <div class="rounded-md border">
