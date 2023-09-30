@@ -2,7 +2,263 @@
 
 <template>
   <div class="container h-screen py-16 dark:bg-black">
-    <h2 class="text-2xl">টিপস</h2>
+    <!-- tips item start here -->
+    <div class="border rounded-md shadow mb-2.5">
+      <p class="text-base text-center py-2 dark:text-white">
+        যথাসম্ভব পাতিলে থাকনা দিয়ে রান্না করুন। এতে করে খাবারের পুষ্টিগুণ ঠিক
+        থাকে।
+      </p>
+      <!-- action start here -->
+      <div
+        class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
+      >
+        <!-- copy start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">কপি</span>
+        </div>
+        <!-- copy stop here -->
+        <!-- share start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">শেয়ার</span>
+        </div>
+        <!-- share stop here -->
+      </div>
+      <!-- action stop here -->
+    </div>
+    <!-- tips item stop here -->
+    <!-- tips item start here -->
+    <div class="border rounded-md shadow mb-2.5">
+      <p class="text-base text-center px-2 py-2 dark:text-white">
+        রান্না শুরু করার আগে, সমস্ত উপকরণ এবং সরকারী উপযুক্ত প্রস্তুতি করুন।
+      </p>
+      <!-- action start here -->
+      <div
+        class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
+      >
+        <!-- copy start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">কপি</span>
+        </div>
+        <!-- copy stop here -->
+        <!-- share start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">শেয়ার</span>
+        </div>
+        <!-- share stop here -->
+      </div>
+      <!-- action stop here -->
+    </div>
+    <!-- tips item stop here -->
+    <!-- tips item start here -->
+    <div class="border rounded-md shadow mb-2.5">
+      <p class="text-base text-center px-2 py-2 dark:text-white">
+        সমস্ত উপকরণ চেক করুন এবং সবসময় প্রয়োজনে তা আপনার কাছে থাকার নিশ্চিত
+        হোন।
+      </p>
+      <!-- action start here -->
+      <div
+        class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
+      >
+        <!-- copy start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">কপি</span>
+        </div>
+        <!-- copy stop here -->
+        <!-- share start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">শেয়ার</span>
+        </div>
+        <!-- share stop here -->
+      </div>
+      <!-- action stop here -->
+    </div>
+    <!-- tips item stop here -->
+    <!-- tips item start here -->
+    <div class="border rounded-md shadow mb-2.5">
+      <p class="text-base text-center px-2 py-2 dark:text-white">
+        মাঝখানে রান্না করতে সময়ে সাবান ও পানি দিয়ে হাত ধোয়া একটি ভাল আদত।
+      </p>
+      <!-- action start here -->
+      <div
+        class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
+      >
+        <!-- copy start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">কপি</span>
+        </div>
+        <!-- copy stop here -->
+        <!-- share start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">শেয়ার</span>
+        </div>
+        <!-- share stop here -->
+      </div>
+      <!-- action stop here -->
+    </div>
+    <!-- tips item stop here -->
+    <!-- tips item start here -->
+    <div class="border rounded-md shadow mb-2.5">
+      <p class="text-base text-center px-2 py-2 dark:text-white">
+        মসলা স্বাদমত এবং প্রয়োজন মতো হওয়া গুরুত্বপূর্ণ।
+      </p>
+      <!-- action start here -->
+      <div
+        class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
+      >
+        <!-- copy start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">কপি</span>
+        </div>
+        <!-- copy stop here -->
+        <!-- share start here -->
+        <div class="flex items-center justify-center cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 stroke-black dark:stroke-white mr-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+            />
+          </svg>
+          <span class="text-sm text-black dark:text-white">শেয়ার</span>
+        </div>
+        <!-- share stop here -->
+      </div>
+      <!-- action stop here -->
+    </div>
+    <!-- tips item stop here -->
   </div>
 </template>
 
