@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import { createPinia } from "pinia";
 
 import Home from "./routes/Home.vue";
+import Tips from "./routes/Tips.vue";
 import Settings from "./routes/Settings.vue";
 import Errors from "./routes/Errors.vue";
 
@@ -13,6 +14,10 @@ const routes = [
   {
     path: "/",
     component: Home,
+  },
+  {
+    path: "/tips/",
+    component: Tips,
   },
   {
     path: "/settings",
