@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+const copyClipboardText = (el) => {
+  const currentElement = el?.target?.parentElement;
+  const currentParentElement = currentElement?.parentElement;
+  const currentParentUpperElement = currentParentElement?.parentElement;
+  const currentText = currentParentUpperElement?.firstChild?.innerText;
+  navigator.clipboard.writeText(currentText);
+};
+</script>
 
 <template>
   <div class="container h-screen py-16 dark:bg-black">
@@ -13,7 +21,10 @@
         class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
       >
         <!-- copy start here -->
-        <div class="flex items-center justify-center cursor-pointer">
+        <div
+          class="flex items-center justify-center cursor-pointer"
+          @click="copyClipboardText"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -64,7 +75,10 @@
         class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
       >
         <!-- copy start here -->
-        <div class="flex items-center justify-center cursor-pointer">
+        <div
+          class="flex items-center justify-center cursor-pointer"
+          @click="copyClipboardText"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -116,7 +130,10 @@
         class="flex items-center justify-between bg-gray-100 dark:bg-transparent dark:border-t px-2 py-1"
       >
         <!-- copy start here -->
-        <div class="flex items-center justify-center cursor-pointer">
+        <div
+          class="flex items-center justify-center cursor-pointer"
+          @click="copyClipboardText"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
