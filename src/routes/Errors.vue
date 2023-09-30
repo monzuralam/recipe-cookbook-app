@@ -3,7 +3,7 @@ import "@fontsource/hind-siliguri/700.css";
 </script>
 
 <template>
-  <section class="py-40 dark:bg-black">
+  <section class="max-h-screen py-40 dark:bg-black">
     <div class="container">
       <img
         src="../assets/404.png"
