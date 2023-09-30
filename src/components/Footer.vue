@@ -100,4 +100,13 @@ footer nav ul li a.router-link-exact-active {
 footer nav ul li a.router-link-exact-active span {
   display: block;
 }
+
+/* dark mode */
+.dark footer nav ul li a.router-link-exact-active {
+  stroke: black;
+}
+
+.dark footer nav ul li a.router-link-exact-active span {
+  color: black;
+}
 </style>
