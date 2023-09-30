@@ -1,6 +1,7 @@
 <script setup>
 import "@fontsource/hind-siliguri/500.css";
 import DarkMode from "./../components/Settings/DarkMode.vue";
+import Privacy from "../components/Settings/Privacy.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import DarkMode from "./../components/Settings/DarkMode.vue";
       </h2>
     </div>
     <DarkMode />
+    <Privacy />
   </div>
 </template>
 
