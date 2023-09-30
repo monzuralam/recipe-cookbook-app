@@ -1,9 +1,31 @@
 <script setup>
 import "@fontsource/hind-siliguri/500.css";
+import { ref, onMounted } from "vue";
+
+// life cycle hook
+onMounted(() => {
+  if (localStorage.getItem("darkMode")) {
+    document.documentElement.classList.add("dark");
+  }
+});
+
+// toggle button
+const toggleDarkMode = () => {
+  let isDark = localStorage.getItem("darkMode");
+  if (isDark) {
+    localStorage.removeItem("darkMode");
+    document.documentElement.classList.remove("dark");
+    console.log("remove");
+  } else {
+    localStorage.setItem("darkMode", true);
+    document.documentElement.classList.add("dark");
+    console.log("added");
+  }
+};
 </script>
 
 <template>
-  <div class="container py-16 dark:bg-black">
+  <div class="container h-screen py-16 dark:bg-black">
     <div class="mb-5">
       <img
         src="../assets/favicon.png"
@@ -44,6 +66,7 @@ import "@fontsource/hind-siliguri/500.css";
             name=""
             class="sr-only darkmode"
             id="darkmode"
+            @click="toggleDarkMode"
           />
           <div
             class="w-10 h-4 bg-gray-300 dark:bg-white rounded-full shadow-inner"
