@@ -7,7 +7,7 @@ import "@fontsource/hind-siliguri/500.css";
     <div class="grid grid-cols-2 gap-2">
       <!-- category item start here -->
       <div class="rounded-md border">
-        <a href="#">
+        <router-link to="/recipes/1">
           <img
             src="../assets/images/category/biriyani.jpg"
             alt="Recipe"
@@ -16,7 +16,7 @@ import "@fontsource/hind-siliguri/500.css";
           <h3 class="text-lg font-medium leading-normal text-center py-1.5">
             বিরিয়ানি রেসিপি
           </h3>
-        </a>
+        </router-link>
       </div>
       <!-- category item stop here -->
       <!-- category item start here -->

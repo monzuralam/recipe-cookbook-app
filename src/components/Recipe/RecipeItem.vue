@@ -2,7 +2,7 @@
 
 <template>
   <div class="border rounded-md shadow p-1.5 mb-2.5">
-    <router-link to="/recipe/" class="flex">
+    <router-link to="/recipes/recipe/1" class="flex">
       <img
         src="../../assets/images/category/kabab.jpg"
         alt=""
