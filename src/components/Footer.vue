@@ -1,5 +1,14 @@
 <script setup>
 import "@fontsource/hind-siliguri/400.css";
+/**
+ * check on loading dark mode init
+ */
+var initDarkMode = () => {
+  if (localStorage.getItem("darkMode")) {
+    document.documentElement.classList.add("dark");
+  }
+};
+initDarkMode();
 </script>
 
 <template>

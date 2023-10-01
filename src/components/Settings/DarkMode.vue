@@ -1,13 +1,4 @@
 <script setup>
-import { onMounted } from "vue";
-
-// life cycle hook
-onMounted(() => {
-  if (localStorage.getItem("darkMode")) {
-    document.documentElement.classList.add("dark");
-  }
-});
-
 // toggle button
 const toggleDarkMode = () => {
   let isDark = localStorage.getItem("darkMode");
