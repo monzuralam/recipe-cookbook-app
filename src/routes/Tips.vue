@@ -10,12 +10,13 @@ const extractText = (el) => {
   return currentText;
 };
 
+/**
+ * Copy clipboard text
+ * @param {string} el
+ */
 const copyClipboardText = (el) => {
-  const currentElement = el?.target?.parentElement;
-  const currentParentElement = currentElement?.parentElement;
-  const currentParentUpperElement = currentParentElement?.parentElement;
-  const currentText = currentParentUpperElement?.firstChild?.innerText;
-  navigator.clipboard.writeText(currentText);
+  const copyText = extractText(el);
+  navigator.clipboard.writeText(copyText);
 };
 
 /**
