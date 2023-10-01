@@ -7,6 +7,7 @@ import Tips from "./routes/Tips.vue";
 import Favorite from "./routes/Favorite.vue";
 import Settings from "./routes/Settings.vue";
 import Errors from "./routes/Errors.vue";
+import Recipes from "./routes/Recipes.vue";
 
 import "./style.css";
 import App from "./App.vue";
@@ -27,6 +28,10 @@ const routes = [
   {
     path: "/settings",
     component: Settings,
+  },
+  {
+    path: "/recipes/:id",
+    component: Recipes,
   },
   {
     path: "/:pathMatch(.*)*",
