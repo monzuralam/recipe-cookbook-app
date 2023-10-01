@@ -7,10 +7,10 @@
       alt=""
       class="max-w-full w-full mb-5 max-h-52"
     />
-    <h2 class="text-2xl font-medium mb-2">কাচ্চি বিরিয়ানি</h2>
+    <h2 class="text-2xl font-medium dark:text-white mb-2">কাচ্চি বিরিয়ানি</h2>
     <p>| ২ ঘন্টা | ৮ জন |</p>
-    <h3 class="text-xl font-normal my-2">উপাদানগুলি:</h3>
-    <ul class="rcps-list-ingredients">
+    <h3 class="text-xl font-normal dark:text-white my-2">উপাদানগুলি:</h3>
+    <ul class="dark:text-white">
       <li>২ কেজি খাসি বা গরুর মাংস</li>
       <li>১ কেজি চিনিগুড়া বা কালিজিড়া চাল</li>
       <li>১/২ কাপ টক দই</li>
@@ -40,7 +40,7 @@
       <li>৮-১০ টা কাজু বাদাম</li>
       <li>পরিমানমত লবণ</li>
     </ul>
-    <h3 class="text-xl font-normal my-2">প্রস্তুত প্রণালি:</h3>
+    <h3 class="text-xl font-normal dark:text-white my-2">প্রস্তুত প্রণালি:</h3>
     <p>মাংস ভাল করে ধুয়ে নিন। খুব ভালো করে পানি ঝরিয়ে নিন।</p>
     <p>
       এবার বিরিয়ানি মশলার মিশ্রণ তৈরি করুন। তারা মৌরি, কালো এলাচ, সাদা এলাচ,
@@ -86,6 +86,7 @@
 .recipe p {
   @apply text-base;
   @apply mb-1;
+  @apply dark:text-white;
 }
 
 /* scrollbar */
