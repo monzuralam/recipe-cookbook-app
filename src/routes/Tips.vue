@@ -1,10 +1,34 @@
 <script setup>
+/**
+ * Current Text on click
+ */
+const extractText = (el) => {
+  const currentElement = el?.target?.parentElement;
+  const currentParentElement = currentElement?.parentElement;
+  const currentParentUpperElement = currentParentElement?.parentElement;
+  const currentText = currentParentUpperElement?.firstChild?.innerText;
+  return currentText;
+};
+
 const copyClipboardText = (el) => {
   const currentElement = el?.target?.parentElement;
   const currentParentElement = currentElement?.parentElement;
   const currentParentUpperElement = currentParentElement?.parentElement;
   const currentText = currentParentUpperElement?.firstChild?.innerText;
   navigator.clipboard.writeText(currentText);
+};
+
+/**
+ * share text
+ * @param {string} el
+ */
+const shareTipsText = async (el) => {
+  const currentShareText = extractText(el);
+  try {
+    await navigator.share(currentShareText);
+  } catch (error) {
+    alert("দুঃখিত! শেয়ার করা যায় নি।");
+  }
 };
 </script>
 
@@ -43,7 +67,10 @@ const copyClipboardText = (el) => {
         </div>
         <!-- copy stop here -->
         <!-- share start here -->
-        <div class="flex items-center justify-center cursor-pointer">
+        <div
+          class="flex items-center justify-center cursor-pointer"
+          @click="shareTipsText"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
