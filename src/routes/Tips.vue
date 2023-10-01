@@ -24,10 +24,12 @@ const copyClipboardText = (el) => {
  */
 const shareTipsText = async (el) => {
   const currentShareText = extractText(el);
-  try {
-    await navigator.share(currentShareText);
-  } catch (error) {
-    alert("দুঃখিত! শেয়ার করা যায় নি।");
+  const shareData = {
+    text: currentShareText,
+  };
+
+  if (navigator.share && navigator.canShare(shareData)) {
+    navigator.share(shareData);
   }
 };
 </script>
