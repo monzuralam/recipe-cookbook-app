@@ -1,6 +1,7 @@
 <script setup>
 import RecipeItem from "../components/Recipe/RecipeItem.vue";
 import { useRecipes } from "../stores/recipes";
+import RecipeItemError from "../components/Recipe/RecipeItemError.vue";
 // retrive id
 const url = window.location.pathname;
 const id = url.substring(url.lastIndexOf("/") + 1);
@@ -16,6 +17,8 @@ const currentRecipes = recipe.filter((recipe) => recipe.category == id);
       :key="currentRecipe.id"
       :recipe="currentRecipe"
     />
+
+    <RecipeItemError v-show="currentRecipes.length == 0" />
   </div>
 </template>
 <style scoped></style>
