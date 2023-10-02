@@ -1,4 +1,12 @@
 <script setup>
+const props = defineProps({
+  data: Object,
+});
+
+const content = props?.data?.content;
+
+console.log(props);
+
 /**
  * Current Text on click
  */
@@ -38,8 +46,7 @@ const shareTipsText = async (el) => {
   <!-- tips item start here -->
   <div class="border rounded-md shadow mb-2.5">
     <p class="text-base text-center py-2 dark:text-white">
-      যথাসম্ভব পাতিলে থাকনা দিয়ে রান্না করুন। এতে করে খাবারের পুষ্টিগুণ ঠিক
-      থাকে।
+      {{ content }}
     </p>
     <!-- action start here -->
     <div
