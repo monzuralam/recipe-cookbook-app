@@ -84,6 +84,38 @@ export const useRecipes = defineStore("recipes", {
                     title: "অন্যান্য",
                     img: "https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141349.jpg"
                 },
+            ],
+            recipe: [
+                {
+                    id: 1,
+                    category: 1,
+                    title: "কাচ্চি বিরিয়ানি",
+                    img: "https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg"
+                },
+                {
+                    id: 2,
+                    category: 1,
+                    title: "চিকেন বিরিয়ানি",
+                    img: "https://img.freepik.com/free-photo/plate-biryani-with-bowl-chicken-vegetables_505751-3813.jpg?"
+                },
+                {
+                    id: 3,
+                    category: 1,
+                    title: "তান্দুরি চিকেন বিরিয়ানি",
+                    img: "https://img.freepik.com/premium-photo/bowl-biryani-with-chicken-dish-side_582637-8942.jpg"
+                },
+                {
+                    id: 4,
+                    category: 2,
+                    title: "চিকেন টিক্কা কাবাব",
+                    img: "https://img.freepik.com/free-photo/grilled-skewers-with-vegetables-gray-plate-top-view-ai-generative_123827-24874.jpg"
+                },
+                {
+                    id: 5,
+                    category: 2,
+                    title: "সুতি কাবাব",
+                    img: "https://img.freepik.com/free-photo/skewers-with-meat-kebabs-vegetables-rustic-wooden-table-ai-generative_123827-24878.jpg"
+                },
             ]
         }
     },
