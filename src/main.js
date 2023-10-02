@@ -16,30 +16,37 @@ import App from "./App.vue";
 const routes = [
   {
     path: "/",
+    name: "home",
     component: Home,
   },
   {
     path: "/tips/",
+    name: "tips",
     component: Tips,
   },
   {
     path: "/favorite/",
+    name: "favorite",
     component: Favorite,
   },
   {
     path: "/settings",
+    name: "settings",
     component: Settings,
   },
   {
     path: "/recipes/:id",
+    name: "recipes",
     component: Recipes,
   },
   {
     path: "/recipes/recipe/:id",
+    name: "recipe",
     component: Recipe,
   },
   {
     path: "/:pathMatch(.*)*",
+    name: "errors",
     component: Errors,
   },
 ];
