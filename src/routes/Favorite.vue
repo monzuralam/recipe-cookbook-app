@@ -1,44 +1,19 @@
-<script setup></script>
+<script setup>
+import RecipeItem from "../components/Recipe/RecipeItem.vue";
+import { useRecipes } from "../stores/recipes";
+const recipeStore = useRecipes();
+const recipe = recipeStore.recipe;
+const currentRecipes = recipe.filter((recipe) => recipe.favorite == true);
+</script>
 
 <template>
-  <div class="container h-screen py-16 dark:bg-black">
-    <!-- favorite item start here -->
-    <div class="border rounded-md shadow p-1.5 mb-2.5">
-      <a href="#" class="flex">
-        <img
-          src="../assets/images/category/biriyani.jpg"
-          alt=""
-          class="w-12 h-12 rounded-full"
-        />
-        <div class="flex items-center mx-auto">
-          <h3
-            class="text-xl font-normal leading-normal text-center text-black dark:text-white"
-          >
-            কাচ্চি বিরিয়ানি
-          </h3>
-        </div>
-      </a>
-    </div>
-    <!-- favorite item stop here -->
-
-    <!-- favorite item start here -->
-    <div class="border rounded-md shadow p-1.5 mb-2.5">
-      <a href="#" class="flex">
-        <img
-          src="../assets/images/category/kabab.jpg"
-          alt=""
-          class="w-12 h-12 rounded-full"
-        />
-        <div class="flex items-center mx-auto">
-          <h3
-            class="text-xl font-normal leading-normal text-center text-black dark:text-white"
-          >
-            বিফ কাবাব
-          </h3>
-        </div>
-      </a>
-    </div>
-    <!-- favorite item stop here -->
+  <div class="container overflow-y-scroll h-screen py-16 dark:bg-black">
+    <RecipeItem
+      v-for="currentRecipe in currentRecipes"
+      :key="currentRecipe.id"
+      :recipe="currentRecipe"
+    />
+    <RecipeItemError v-show="currentRecipes.length == 0" />
   </div>
 </template>
 
