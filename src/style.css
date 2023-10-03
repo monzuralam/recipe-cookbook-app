@@ -14,6 +14,20 @@ body {
   @apply mx-auto;
 }
 
+/* recipe */
+.recipe h3 {
+  @apply text-xl;
+  @apply font-normal;
+  @apply dark:text-white;
+  @apply my-2;
+}
+
+p{
+  @apply text-base;
+  @apply mb-1;
+  @apply dark:text-white;
+}
+
 /* css */
 ::-webkit-scrollbar {
   width: 2px;
